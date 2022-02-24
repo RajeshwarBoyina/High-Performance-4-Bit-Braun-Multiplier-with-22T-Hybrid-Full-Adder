@@ -21,9 +21,9 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 
 ## Abstract
 
-* Low power and high speed circuits have become important requirements in high performance VLSI design in the last few years. An ***Arithmetic Logic Unit*** basically consists of an **Adder** and a **Multiplier**. The basic component of any ALU is an adder and the operation performed by it is called as addition. And this adder is used as a building block to design a multiplier. Hence, multiplication becomes a fundamental unit of any DSP application like FFT, etc. As a result, new approaches to arithmetic circuit design are needed to achieve desirable output in terms of area, power and delay.
-
-* The main objective is to design a High Performance Adder and Multiplier which will be working upto 2 GHz clock frequency. The proposed Hybrid Full Adder is designed  using Pass Transistors, Transmission gates and Conventional Complementary Metal Oxide Semiconductor. For multiplication operation, Braun multiplier architecture has been implemented using the above mentioned adder. And the average propagation delay and power dissipated by both the circuits is also calculated.
+  ***Low power and high speed circuits have become important requirements in high performance VLSI design in the last few years. An Arithmetic Logic Unit basically consists of an Adder and a Multiplier. The basic component of any ALU is an adder and the operation performed by it is called as addition. And this adder is used as a building block to design a multiplier. Hence, multiplication becomes a fundamental unit of any DSP application like FFT, etc. As a result, new approaches to arithmetic circuit design are needed to achieve desirable output in terms of area, power and delay.***
+  
+  ***The main objective is to design a High Performance Adder and Multiplier which will be working upto 2 GHz clock frequency. The proposed Hybrid Full Adder is designed  using Pass Transistors, Transmission gates and Conventional Complementary Metal Oxide Semiconductor. For multiplication operation, Braun multiplier architecture has been implemented using the above mentioned adder. And the average propagation delay and power dissipated by both the circuits is also calculated.***
 
 ## Reference Circuit Details
 
