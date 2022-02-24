@@ -4,7 +4,7 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 # Table of Contents
 [TOCM]
 
-1. [Introduction](#Introduction)
+1. [Abstract](#Abstract)
 2. [Reference Circuit Details](#reference-circuit-details)
 3. [Installation of the tools](#installation-of-the-tools)
 4. [Methodology](#Methodology)
@@ -18,3 +18,7 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 6. [References](#references)
 7. [Acknowledgement](#Acknowledgement)
 8. [Author](#author)
+
+## Abstract
+
+Low power and high speed circuits have become important requirements in high performance VLSI design in the last few years. An Arithmetic Logic Unit basically consists of an adder and a multiplier. The basic component of any ALU is an adder and the operation performed by it is called as addition. And this adder is used as a building block to design a multiplier. Hence, multiplication becomes a fundamental unit of any DSP application like FFT, etc. As a result, new approaches to arithmetic circuit design are needed to achieve desirable output in terms of area, power and delay.
