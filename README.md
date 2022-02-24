@@ -8,10 +8,10 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 2. [Reference Circuit Details](#reference-circuit-details)
 3. [Installation of the tools](#installation-of-the-tools)
 4. [Methodology](#Methodology)
-    - [Step1 Construct AND Gate](#step1-construct-and-gate)
-    - [Step2 Construct 4X4 Matrix of AND Gate](#step2-construct-4x4-matrix-of-and-gate)
-    - [Step2 Construct Full Adder](#step4-construct-full-adder)
-    - [Step5 Construct 4-Bit Braun Multiplier](#step5-construct-4-bit-braun-multiplier) 
+    - [Step 1 Design AND Gate](#step-1-Design-and-gate)
+    - [Step 2 Design 4X4 Matrix of AND Gate](#step-2-design-4x4-matrix-of-and-gate)
+    - [Step 3 Design Full Adder](#step-3-design-full-adder)
+    - [Step 4 Design 4-Bit Braun Multiplier](#step-4-design-4-bit-braun-multiplier) 
 5. [Results](#results)
     - [Command Window](#command-window)
     - [Obtained Output Waveforms](#obtained-output-waveforms)
@@ -50,5 +50,8 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
       ![third Equation](https://latex.codecogs.com/png.image?\dpi{110}%20\textup{If%20}C_{in}=0\textup{%20then\textit{%20Output%20}%20}=A\oplus%20B)    
     ![fourth Equation](https://latex.codecogs.com/png.image?\dpi{110}%20\textup{If%20}C_{in}=1\textup{%20and%20}A\oplus%20B=0\textup{%20then\textit{%20Output}}=C_{in})    
     ![fifth equation](https://latex.codecogs.com/png.image?\dpi{110}%20\textup{If%20}C_{in}=1\textup{%20and%20}A\oplus%20B=1\textup{%20then\textit{%20Output}}=\overline{C_{in}})  
-  * The proposed FA's sum output is obtained by cascading two XOR modules.
+
+## Methodology
+
+### Step 1 Design AND Gate
   
