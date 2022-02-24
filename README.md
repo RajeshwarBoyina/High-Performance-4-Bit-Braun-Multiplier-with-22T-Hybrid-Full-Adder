@@ -41,10 +41,14 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
     - two for carry generation 
     - two for sum genration.
   * Carry Generation:
-    - A novel AND-OR module based on TG and CPL logic is implemented as part of the proposed carry generation part. 
-      -![First Equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B300%7D%20%5Cfn_cm%20%5Ctiny%20%5Ctextup%7BIf%20%7DC_%7Bin%7D%3D0%20%5Ctextup%7B%20then%20%7D%20C_%7Bout%7D%3DA%5Ccdot%20B)
-      -![Second Equaiton](https://latex.codecogs.com/png.image?\dpi{110}%20C_{in}=1%20\Rightarrow%20C_{out}=A+B)
+    - A novel AND-OR module based on TG and CPL logic is implemented as part of the proposed carry generation part.  
+       ![First Equation](https://latex.codecogs.com/png.image?\dpi{120}%20\textup{If%20}C_{in}=0\textup{%20then%20}C_{out}=A\cdot%20B)           
+       ![Second Equaiton](https://latex.codecogs.com/png.image?\dpi{120}%20\textup{If%20}C_{in}=0\textup{%20then%20}C_{out}=A\cdot%20B)  
  
-  * 
+  * Sum Generation
+    - The proposed FA's sum output is obtained by cascading two XOR modules.  
+      ![third Equation](https://latex.codecogs.com/png.image?\dpi{110}%20\textup{If%20}C_{in}=0\textup{%20then\textit{%20Output%20}%20}=A\oplus%20B)    
+    ![fourth Equation](https://latex.codecogs.com/png.image?\dpi{110}%20\textup{If%20}C_{in}=1\textup{%20and%20}A\oplus%20B=0\textup{%20then\textit{%20Output}}=C_{in})    
+    ![fifth equation](https://latex.codecogs.com/png.image?\dpi{110}%20\textup{If%20}C_{in}=1\textup{%20and%20}A\oplus%20B=1\textup{%20then\textit{%20Output}}=\overline{C_{in}})  
   * The proposed FA's sum output is obtained by cascading two XOR modules.
   
