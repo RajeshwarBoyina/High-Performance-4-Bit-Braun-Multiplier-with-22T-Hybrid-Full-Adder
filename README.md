@@ -242,6 +242,9 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
  
 ### Step 4 Design 4-Bit Braun Multiplier 
  
+* Make a new cell  and schematic for Braun multiplier construct the Braun Multiplier using symbols of Array of AND Gate and Hybrid FA present in the library you have       created in the beginning. 
+* After construction of schematic of Braun Multiplier **Check and Save** it.
+* Make a new symbol for our multiplier **(File -> New Cellview -> From) **.
 ![image of Braun Multiplier with my name](Images/Braun%20MUltiplier.png) 
  
 ![image of Braun Multiplier without my name](Images/cp_lib1_cp_BraunMultiplier_schematic_page-0001.jpg) 
@@ -250,7 +253,11 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
 * The block at left side of the image is the Partial products genrator (Arra of AND gates).  
 * In the Schematic:
   - We have 3 stages of carry save adders
-  - And 1 stage of ripple carry adder at the bottom.   
+  - And 1 stage of ripple carry adder at the bottom. 
+ 
+![image of testbench of Braun Multiplier](Images/cp_lib1_test_bench_3_schematic.png) 
+ 
+* Test Bench of **4 Bit Braun Multiplier** is shown above. 
 ``` 
 *  Generated for: PrimeSim
 *  Design library name: cp_lib1
