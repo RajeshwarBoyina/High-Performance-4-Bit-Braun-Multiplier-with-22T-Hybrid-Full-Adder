@@ -55,9 +55,13 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 
 ### Step 1 Design AND Gate
   
-![image1](https://user-images.githubusercontent.com/100316566/155676520-5da750fe-792c-448b-8049-c299902d446c.png)
+![image1](Images/And-gates.png)
 * The AND gate circuit is made of two modules 
   - NAND part
-  - NOT part
- ![and gate schematic with my name](Images/And-gates.png)
+  - NOT part 
+ 
+![and gate schematic with my name](Images/AND%20Gate%20Ciruit.png) 
+ 
+![and gate schematic](Images/cp_lib1_cp_and_schematic.png)
+ 
  
