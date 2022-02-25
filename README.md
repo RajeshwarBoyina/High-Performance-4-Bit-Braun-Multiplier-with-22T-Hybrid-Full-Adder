@@ -83,7 +83,6 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Fri Feb 25 09:06:29 2022
 
 .global gnd!
 ********************************************************************************
@@ -177,7 +176,6 @@ v1 net27 gnd! dc=1.07
 .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Fri Feb 25 09:02:35 2022
 
 .global gnd!
 ********************************************************************************
@@ -248,7 +246,11 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
  
 ![image of Braun Multiplier without my name](Images/cp_lib1_cp_BraunMultiplier_schematic_page-0001.jpg) 
  
-*  
+* Each Block in the right side of the image is a **Hybrid Full Adder (22T)**.  
+* The block at left side of the image is the Partial products genrator (Arra of AND gates).  
+* In the Schematic:
+  - We have 3 stages of carry save adders
+  - And 1 stage of ripple carry adder at the bottom.   
 ``` 
 *  Generated for: PrimeSim
 *  Design library name: cp_lib1
@@ -257,7 +259,6 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
 .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Fri Feb 25 08:32:03 2022
 
 .global gnd!
 ********************************************************************************
