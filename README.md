@@ -248,6 +248,7 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
  
 ![image of Braun Multiplier without my name](Images/cp_lib1_cp_BraunMultiplier_schematic_page-0001.jpg) 
  
+*  
 ``` 
 *  Generated for: PrimeSim
 *  Design library name: cp_lib1
