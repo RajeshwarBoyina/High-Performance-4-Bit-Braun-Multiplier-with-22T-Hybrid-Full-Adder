@@ -1,9 +1,9 @@
 # High Performance 4 Bit Braun Multiplier with 22T Hybrid Full Adder
 This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid Full Adder
 
-# Table of Contents
-[TOCM]
-
+# Table of Contents 
+ 
+  
 1. [Abstract](#Abstract)
 2. [Reference Circuit Details](#reference-circuit-details)
 3. [Installation of the tools](#installation-of-the-tools)
@@ -244,7 +244,8 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
  
 * Make a new cell  and schematic for Braun multiplier construct the Braun Multiplier using symbols of Array of AND Gate and Hybrid FA present in the library you have       created in the beginning. 
 * After construction of schematic of Braun Multiplier **Check and Save** it.
-* Make a new symbol for our multiplier **(File -> New Cellview -> From) **.
+* Make a new symbol for our multiplier **Design -> New Cellview -> From Cellview **. 
+ 
 ![image of Braun Multiplier with my name](Images/Braun%20MUltiplier.png) 
  
 ![image of Braun Multiplier without my name](Images/cp_lib1_cp_BraunMultiplier_schematic_page-0001.jpg) 
@@ -258,6 +259,17 @@ v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
 ![image of testbench of Braun Multiplier](Images/cp_lib1_test_bench_3_schematic.png) 
  
 * Test Bench of **4 Bit Braun Multiplier** is shown above. 
+ 
+![image of making synmbol procedure](Images/Screenshot%20(58).png) 
+ 
+* Above image shows the testsuit created for running the testbench and plotting it.
+* To open the testsuite **Tools -> PrimeWave **. 
+* In the Testsuite window on lefthand side, under _Testbenches_ there will be a _Model Files_ option where you will provide it with path of _saed2nm.lib_ file.
+* Under _Testbenches_ section there is an another option _Analyses_, select it and select for _trans_. 
+ 
+* Netlist genrated for testbench: 
+ 
+
 ``` 
 *  Generated for: PrimeSim
 *  Design library name: cp_lib1
@@ -402,3 +414,4 @@ v10 a1 gnd! dc=0 pulse ( 1.07 0 0 10p 10p 20n 40n )
 .end
 ```
 
+## Results
