@@ -92,21 +92,6 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
 *Custom Compiler Version S-2021.09
 
 .global gnd!
-********************************************************************************
-* Library          : cp_lib1
-* Cell             : cp_and
-* View             : schematic
-* View Search List : hspice hspiceD schematic spice veriloga
-* View Stop List   : hspice hspiceD
-********************************************************************************
-.subckt cp_and a b vrefh vrefl y
-xm6 y net36 vrefl vrefl n105 w=0.1u l=0.03u nf=1 m=1
-xm1 net5 b vrefl vrefl n105 w=0.2u l=0.03u nf=1 m=1
-xm0 net36 a net5 vrefl n105 w=0.2u l=0.03u nf=1 m=1
-xm7 y net36 vrefh vrefh p105 w=0.1u l=0.03u nf=1 m=1
-xm3 net36 b vrefh vrefh p105 w=0.1u l=0.03u nf=1 m=1
-xm2 net36 a vrefh vrefh p105 w=0.1u l=0.03u nf=1 m=1
-.ends cp_and
 
 ********************************************************************************
 * Library          : cp_lib1
@@ -134,35 +119,6 @@ xi2 a0 b2 vrefh vrefl a0b2 cp_and
 xi1 a0 b1 vrefh vrefl a0b1 cp_and
 xi0 a0 b0 vrefh vrefl a0b0 cp_and
 .ends cp_seriesofand_s
-
-********************************************************************************
-* Library          : cp_lib1
-* Cell             : test_bench_4
-* View             : schematic
-* View Search List : hspice hspiceD schematic spice veriloga
-* View Stop List   : hspice hspiceD
-********************************************************************************
-xi0 net29 1 2 3 4 gnd! 5 6 7 8 gnd! 9 10 11 12 net27 13 14 15 16 net33 net35
-+ net31 gnd! net38 gnd! cp_seriesofand_s
-v9 net38 gnd! dc=1.070
-v5 net35 gnd! dc=1.07
-v4 net33 gnd! dc=1.07
-v3 net31 gnd! dc=1.07
-v2 net29 gnd! dc=1.07
-v1 net27 gnd! dc=1.07
-
-.tran '1n' '40n' name=tran
-
-.option primesim_remove_probe_prefix = 0
-.probe v(*) i(*) level=1
-.probe tran v(1) v(10) v(11) v(12) v(13) v(14) v(15) v(16) v(2) v(3) v(4) v(5)
-+ v(6) v(7) v(8) v(9)
-
-.temp 25
-
-.option primesim_output=wdf
-
-.option parhier = LOCAL
 
 .end
  ``` 
@@ -217,30 +173,6 @@ xm3 cout cin net61 vrefh p105 w=0.1u l=0.03u nf=1 m=1
 xm1 net61 a_bar b vrefh p105 w=0.1u l=0.03u nf=1 m=1
 .ends cp_hybridfulladder
 
-********************************************************************************
-* Library          : cp_lib1
-* Cell             : testBench_2
-* View             : schematic
-* View Search List : hspice hspiceD schematic spice veriloga
-* View Stop List   : hspice hspiceD
-********************************************************************************
-xi0 a b net11 cout sum net8 gnd! cp_hybridfulladder
-v1 net8 gnd! dc=1.05
-v4 b gnd! dc=0 pulse ( 1.05 0 0 10p 10p 400n 800n )
-v3 a gnd! dc=0 pulse ( 1.05 0 0 10p 10p 200n 400n )
-v2 net11 gnd! dc=0 pulse ( 1.05 0 0 10p 10p 100n 200n )
-
-.tran '1n' '40n' name=tran
-
-.option primesim_remove_probe_prefix = 0
-.probe v(*) i(*) level=1
-.probe tran v(a) v(b) v(cout) v(sum) v(net11)
-
-.temp 25
-
-.option primesim_output=wdf
-
-.option parhier = LOCAL
 
 .end
 ``` 
