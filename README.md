@@ -414,4 +414,23 @@ v10 a1 gnd! dc=0 pulse ( 1.07 0 0 10p 10p 20n 40n )
 .end
 ```
 
-## Results
+## Results 
+ 
+### Functinality 
+ 
+![image for 1011 and 1000](Images/1011.png) 
+ 
+* **A=1011 B=1000** and **P=01011000**. 
+ 
+![image for 1001 and 1010](Images/1001.png) 
+ 
+* **A=1001 B=1010** and **P=01011010**. 
+ 
+![image for 0010 and 0010](Images/0011.png) 
+ 
+* **A=0010 B=0010** and **P=00000100**. 
+ 
+#### Proof
+![1011](Images/combined_proo%202f.png)
+
+
