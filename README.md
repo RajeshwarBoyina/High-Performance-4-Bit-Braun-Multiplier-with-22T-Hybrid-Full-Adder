@@ -13,8 +13,8 @@ This Repository presents the design of a 4 Bit Braun Multiplier using 22T Hybrid
     - [Step 3 Design Full Adder](#step-3-design-full-adder)
     - [Step 4 Design 4-Bit Braun Multiplier](#step-4-design-4-bit-braun-multiplier) 
 5. [Results](#results)
-    - [Command Window](#command-window)
-    - [Obtained Output Waveforms](#obtained-output-waveforms)
+    - [Functionality ](#command-window)
+    - [Delay](#Delay)
 6. [References](#references)
 7. [Acknowledgement](#Acknowledgement)
 8. [Author](#author)
@@ -416,7 +416,7 @@ v10 a1 gnd! dc=0 pulse ( 1.07 0 0 10p 10p 20n 40n )
 
 ## Results 
  
-### Functinality 
+### Functionality 
  
 ![image for 1011 and 1000](Images/1011.png) 
  
@@ -431,6 +431,32 @@ v10 a1 gnd! dc=0 pulse ( 1.07 0 0 10p 10p 20n 40n )
 * **A=0010 B=0010** and **P=00000100**. 
  
 #### Proof
-![1011](Images/combined_proo%202f.png)
+![1011](Images/combined_proo%202f.png) 
+ 
+## Delay
+
+* For manual delay calculation there are two ways of calculating it:
+  - Choose the wort delay out of 64 possible combinations of imput and output bits.
+  - or Calculate the delay for the longest crictical path i.e. here its A0 to P7. 
+ 
+[image for delay rising delay](Images/rising%20delay.png) 
+ 
+* Rising Delay. 
+  
+[image for falling delay](Images/rising%20delay.png) 
+ 
+* Falling Delay. 
+ 
+[image of calculating delay using Measurement](Images/Delay_method.png) 
+ 
+* Method of calculating delay using Measurement Tool available in Waveview window.
+
+## References 
+ 
+- M. Hasan, M. J. Hossein, M. Hossain, H. U. Zaman and S. Islam, "Design of a Scalable Low-Power 1-Bit Hybrid Full Adder for Fast Computation," in IEEE Transactions on     Circuits and Systems II: Express Briefs, vol. 67, no. 8, pp. 1464-1468, Aug. 2020, doi: 10.1109/TCSII.2019.2940558.  
+- Sadeghi, Mohsen and Zahedi, Mahya and Ali, Maaruf, The Cascade   Carry Array Multiplier – A Novel Structure of Digital Unsigned Multipliers for Low-Power Consumption and Ultra-Fast Applications (July 1, 2019). Annals of Emerging Technologies in Computing (AETiC), Print ISSN: 2516-0281, Online ISSN: 2516-029X, pp. 19-27, Vol. 3, No. 3, Published by International Association of Educators and Researchers (IAER), 1st July 2019 , DOI: 10.33166/AETiC.2019.03.003.
+
+
+ 
 
 
